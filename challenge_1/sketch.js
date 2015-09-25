@@ -1,18 +1,9 @@
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
-	noStroke();
-	noLoop();
+	createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-	// clear the background
-	background(50, 50, 150);
-
-	// set a fill color
+	background(0);
 	fill(255, 255, 255);
-
-	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	ellipse(mouseX, mouseY, 100, 100);
 }
